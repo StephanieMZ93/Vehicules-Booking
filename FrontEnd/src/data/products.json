@@ -1,0 +1,66 @@
+[
+    {
+        "id": 1,
+        "crimg": "./img/rangeroverdorada-products.png",
+        "category": "SUV",
+        "title": "Land Rover",
+        "location": "Medellín",
+        "description": "Gold Land Rover Range Rover"
+    },
+    {
+        "id": 2,
+        "crimg": "./img/audiq8-products.png",
+        "category": "SUV",
+        "title": "Audi",
+        "location": "Medellín",
+        "description": "Blue Audi Q8"
+    },
+    {
+        "id": 3,
+        "crimg": "./img/lamborghiniadventor-product.png",
+        "category": "Coupe",
+        "title": "Lamborghini",
+        "location": "Medellín",
+        "description": "Green Lamborghini"
+    },
+    {
+        "id": 4,
+        "crimg": "./img/maserati-gt-product.png",
+        "category": "Saloon",
+        "title": "Maserati",
+        "location": "Medellín",
+        "description": "White Maserati"
+    },
+    {
+        "id": 5,
+        "crimg": "./img/van-xlt-ford-product.png",
+        "category": "Van",
+        "title": "Ford",
+        "location": "Medellín",
+        "description": "Blue Ford"
+    },
+    {
+        "id": 6,
+        "crimg": "./img/astonmartinv12-products.png",
+        "category": "Coupe",
+        "title": "Aston Martin",
+        "location": "Medellín",
+        "description": "Gold Aston Martin"
+    },
+    {
+        "id": 7,
+        "crimg": "./img/lexus-lm-product.png",
+        "category": "Van",
+        "title": "Lexus",
+        "location": "Medellín",
+        "description": "White Lexus"
+    },
+    {
+        "id": 8,
+        "crimg": "./img/bmw-sedan-product.png",
+        "category": "Saloon",
+        "title": "BMW",
+        "location": "Medellín",
+        "description": "White BMW"
+    }
+]

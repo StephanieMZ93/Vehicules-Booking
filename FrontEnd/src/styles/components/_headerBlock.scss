@@ -1,0 +1,74 @@
+.headerBlock {
+  // min-height: 8vh;
+  // top: 11.1vh;
+  @include flex-between;
+  // position: fixed;
+  z-index: 5;
+  // top: 11vh;
+  width: 100vw;
+  color: $color-primary;
+  padding: 0 9rem;
+  font-size: $small-font-size;
+  background: linear-gradient(
+    to top,
+    $color-secondary-dark,
+    $color-secondary-light
+  );
+
+  @include respond(tab-land) {
+    padding: 0 5rem;
+    font-size: $medium-font-size;
+  }
+  @include respond(tab-port) {
+    padding: 0 2rem;
+    font-size: $medium-font-size;
+  }
+  @include respond(phone) {
+    font-size: $medium-font-size;
+  }
+
+  &__left {
+    width: 30%;
+    height: 100%;
+    // border: 3px solid white;
+
+    h1 {
+      margin: 0.5rem;
+    }
+    p {
+      margin: 0.5rem;
+    }
+  }
+  &__right {
+    width: 25%;
+    font-size: 6rem;
+    text-align: right;
+
+    &-arrow {
+      display: none;
+    }
+
+    a {
+      transition: all 0.2s ease-in;
+      &:link,
+      &:visited {
+        text-decoration: none;
+        color: $color-primary;
+      }
+      &:hover {
+        color: transparent;
+        clip-path: text;
+        -webkit-background-clip: text;
+        background-image: linear-gradient(
+          to right,
+          $color-logo-light,
+          $color-logo-dark
+        );
+        &,
+        .headerBlock__right-arrow {
+          display: inline-block;
+        }
+      }
+    }
+  }
+}

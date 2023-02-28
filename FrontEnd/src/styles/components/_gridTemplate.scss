@@ -1,0 +1,30 @@
+// .grid-template {
+//   display: grid;
+//   grid-template-rows: 1.5fr 1.2fr;
+//   //   border: 1px solid red;
+//   width: 100%;
+//   max-height: 11rem;
+
+//   position: fixed;
+//   z-index: 5;
+//   top: 12rem;
+//   width: 100vw;
+//   //   padding: 1rem;
+//   overflow: hidden;
+
+//   @include respond(port-land) {
+//     max-height: 11.5rem;
+//   }
+//   @include respond(phone) {
+//     max-height: 12.5rem;
+//   }
+// }
+
+// .row_1 {
+//   grid-row-start: 1;
+//   grid-row-end: 1;
+// }
+// .row_2 {
+//   grid-row-start: 2;
+//   grid-row-end: 2;
+// }

@@ -1,0 +1,22 @@
+[
+  {
+    "url": "https://images.unsplash.com/photo-1656375800264-33fb635845fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=930&q=80",
+    "title": "Coupe",
+    "quantity": 100
+  },
+  {
+    "url": "https://images.unsplash.com/photo-1570761511122-dd6342842496?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80",
+    "title": "Saloon",
+    "quantity": 200
+  },
+  {
+    "url": "https://images.unsplash.com/photo-1647173756603-83b248f96666?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
+    "title": "Suv/PickUp",
+    "quantity": 300
+  },
+  {
+    "url": "https://images.unsplash.com/photo-1535655685871-dc8158ff167e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80",
+    "title": "Waggon8",
+    "quantity": 400
+  }
+]

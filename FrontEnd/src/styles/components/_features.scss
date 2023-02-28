@@ -1,0 +1,48 @@
+.features {
+  // border: 3px solid orange;
+  width: 100%;
+  padding: 0 4rem;
+  overflow: hidden;
+  &__title {
+    font-size: $large-font-size;
+    // margin: 0 3rem;
+    border-bottom: 3px solid $color-logo-dark;
+  }
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 10rem), 2fr));
+    width: 100%;
+    min-height: 15vh;
+    margin: 2rem 0;
+    gap: 2rem;
+    text-align: center;
+    // border: 3px solid olivedrab;
+    @include respond(tab-port) {
+      grid-template-columns: repeat(auto-fill, minmax(min(100%, 10rem), 2fr));
+    }
+  }
+  &__card {
+    @include flex-block;
+    font-size: $default-font-size;
+
+    @include respond(tab-port) {
+      font-size: $medium-font-size;
+    }
+  }
+  &__img {
+    width: 10rem;
+    height: 10rem;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    @include respond(tab-land) {
+      width: 8.5rem;
+      height: 8.5rem;
+    }
+    @include respond(tab-port) {
+      width: 5.5rem;
+      height: 5.5rem;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.arrive{
+     
+        
+  // border: 1px solid #ff0000;
+    grid-area: arrive;
+    width: 100%;
+  margin-bottom: 4rem;
+  
+    
+&__content{
+  @include border-box;
+// height: 100%;
+// margin: 1rem;
+display: flex;
+flex-direction: column;
+// text-align:center ;
+width: 90%;
+// border: 1px solid red;  
+}
+h1{
+padding: auto;
+font-size: 3rem;
+margin-bottom: .5em;
+font-weight: 600;
+background-image: radial-gradient(circle at 100% 0%, #fff499 0, #f0d473 25%, #d4ab42 50%, #b88304 75%, #a56400 100%);
+color: transparent;
+background-clip: text;
+-webkit-background-clip: text;
+
+}
+
+&__text{
+padding: 0.5rem 0;
+
+}
+}
+

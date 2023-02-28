@@ -1,0 +1,36 @@
+.rating {
+  // @include flex-around;
+  //   border: 1px solid white;
+  width: 10%;
+  @include respond(tab-land) {
+    width: 13%;
+  }
+  @include respond(tab-port) {
+    max-width: 20%;
+  }
+  @include respond(phone) {
+    min-width: 44%;
+  }
+  @include respond(big-desktop) {
+    min-width: 11%;
+  }
+
+  &-container {
+    @include flex-between;
+    // width: 25%;
+    @include respond(tab-port) {
+      width: 50%;
+    }
+  }
+
+  &-stars {
+    cursor: pointer;
+    &:not(:last-child) {
+      margin-right: 0.5rem;
+      text-align: right;
+    }
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
