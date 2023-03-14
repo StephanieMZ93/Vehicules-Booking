@@ -1,0 +1,23 @@
+.gutter-small {
+  margin: 10rem;
+}
+
+.gutter-medium {
+  margin: 15rem;
+}
+
+.inline-block {
+  display: block;
+}
+
+.errorMessage {
+  color: #ff0000;
+}
+
+.color-titles {
+  color: $color-titles;
+}
+
+.aux-top {
+  @include fixed-top;
+}

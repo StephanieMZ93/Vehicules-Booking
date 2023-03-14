@@ -1,0 +1,19 @@
+{
+  "categories": [
+    {
+      "url": "http://",
+      "name": "category_1",
+      "quantity": 100
+    },
+    {
+      "url": "http://",
+      "name": "category_2",
+      "quantity": 200
+    },
+    {
+      "url": "http://",
+      "name": "category_3",
+      "quantity": 300
+    }
+  ]
+}

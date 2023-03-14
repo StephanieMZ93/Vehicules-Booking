@@ -1,0 +1,52 @@
+.cardsReservUser {
+    border: 1px solid red;
+}
+
+.cardDetails {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 2px 2px 5px #ccc;
+    width: 90%;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    justify-content: start;
+    // grid-area: detalle;
+    font-size: 1.7rem;
+    align-self: start;
+    font-size: $default-font-size;
+    h1 {
+      font-size: 2rem;
+    }
+  
+    &__check {
+      width: 90%;
+      height: 5rem;
+      margin: 1rem 0;
+      border-top: 2px solid $color-primary;
+      border-bottom: 2px solid $color-primary;
+      padding: 1rem;
+    }
+    img {
+      width: 30rem;
+      height: 15rem;
+    }
+  
+    &__info {
+      width: 90%;
+      height: 4rem;
+      margin-bottom: 1rem;
+      padding: 0.7rem;
+      color: rgb(53, 53, 60, 0.98);
+      // border: 1px solid olivedrab;
+      span {
+        font-weight: bold;
+  
+        // font-size: 2rem;
+      }
+    }
+}

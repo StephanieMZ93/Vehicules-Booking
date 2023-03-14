@@ -1,0 +1,113 @@
+.footer {
+  @include flex-between;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  height: 8vh;
+  z-index: 5;
+  overflow: hidden;
+  background: linear-gradient(
+    to bottom,
+    $color-secondary-dark,
+    $color-secondary-light
+  );
+  color: #e1ae01;
+
+  &__right {
+    position: relative;
+    // border: 1px solid white;
+    display: grid;
+    grid-template-columns: 14.5rem 1fr;
+    height: 100%;
+    width: 50%;
+    @include respond(tab-port) {
+      // width: 60%;
+    }
+  }
+
+  &__Logo {
+    // border: 1px solid red;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    height: 100%;
+    object-fit: contain;
+    object-position: left;
+    overflow: hidden;
+    min-width: 14.5rem;
+
+    img {
+      max-height: 100%;
+      max-width: 16rem;
+    }
+  }
+
+  &__copyright {
+    position: absolute;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin-left: 0.5rem;
+    font-size: $medium-font-size;
+    bottom: 20%;
+    left: 0;
+
+    @include respond(phone) {
+      font-size: $small-font-size;
+    }
+  }
+
+  &__left {
+    position: relative;
+    // border: 1px solid olivedrab;
+    height: 100%;
+    width: 40%;
+    span {
+      display: inline-block;
+    }
+  }
+
+  &__icons {
+    font-size: $large-font-size;
+    // color: white;
+    color: #e1ae01;
+
+    &:hover {
+      transform: translate(0, -2px) scale(1.01);
+    }
+    &:active {
+      transform: translate(0, 2px) scale(1);
+    }
+
+    &-container {
+      position: absolute;
+      // border: 1px blue solid;
+      @include flex-around;
+      width: 40%;
+      height: 100%;
+      right: 0;
+
+      margin: 0 auto;
+      @include respond(tab-port) {
+        width: 60%;
+      }
+      @include respond(phone) {
+        width: 92%;
+      }
+    }
+  }
+
+  .face:hover {
+    color: #3b5998;
+  }
+
+  .in:hover {
+    color: #0e76a8;
+  }
+
+  .insta:hover {
+    color: #8a3ab9;
+  }
+
+  .twi:hover {
+    color: #00acee;
+  }
+}

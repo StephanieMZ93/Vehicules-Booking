@@ -1,0 +1,23 @@
+.calendar-booking {
+  padding: 2rem;
+  width: 90%;
+  @include border-box;
+  @include respond(tab-port){
+    grid-area: 2/1/2/4;
+  }
+}
+
+.react-calendar--doubleView {
+  width: 100% !important;
+}
+
+.react-calendar__tile--hasActive {
+  background-color: #eacb69 !important;
+}
+.title {
+  padding: auto;
+  font-size: 3rem;
+  margin-bottom: 0.5em;
+  font-weight: 600;
+  color: $color-titles;
+}

@@ -1,0 +1,236 @@
+.button {
+  &2 {
+    padding: 12.5px 30px;
+    margin-block: 1.5rem;
+    border: 0;
+    border-radius: 100px;
+    background-image: radial-gradient(
+      circle at 100% 0%,
+      #fff499 0,
+      #f0d473 25%,
+      #d4ab42 50%,
+      #b88304 75%,
+      #a56400 100%
+    );
+    color: #ffffff;
+    font-weight: Bold;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+
+    &:hover {
+      background-image: radial-gradient(
+        circle at 100% 0%,
+        #fbe689 0,
+        #eacb69 25%,
+        #d4ab42 50%,
+        #be8c17 75%,
+        #ad7100 100%
+      );
+      box-shadow: 0 0 20px #8f8135;
+      transition: all 1s;
+    }
+
+    &:active {
+      background-color: #8f8135;
+      transition: all 0.25s;
+      -webkit-transition: all 0.25s;
+      box-shadow: none;
+    }
+  }
+
+  &--4 {
+    padding: 0.8em 1.75em;
+    background-color: transparent;
+    border-radius: 0.6rem;
+    border: 2px solid transparent;
+    transition: 0.5s;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1;
+    font-weight: 500;
+    font-size: 2rem;
+    font-family: "Roboto", "Segoe UI", sans-serif;
+    text-transform: uppercase;
+    color: $color-logo-dark;
+
+    &::after,
+    &::before {
+      content: "";
+      display: block;
+      height: 100%;
+      width: 100%;
+      transform: skew(90deg) translate(-50%, -50%);
+      position: absolute;
+      inset: 50%;
+      left: 25%;
+      z-index: -1;
+      transition: 0.5s ease-out;
+      background-image: linear-gradient(
+        45deg,
+        $color-logo-light,
+        $color-logo-dark
+      );
+    }
+
+    &::before {
+      top: -50%;
+      left: -25%;
+      transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+      background-image: linear-gradient(
+        45deg to right,
+        $color-logo-dark,
+        $color-logo-light
+      );
+    }
+
+    &:hover::before {
+      transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+    }
+
+    &:hover::after {
+      transform: skew(45deg) translate(-50%, -50%);
+    }
+
+    &:hover {
+      color: $color-secondary-dark;
+      font-weight: 500;
+    }
+
+    &:active {
+      filter: brightness(0.7);
+      transform: scale(0.98);
+    }
+  }
+
+  &--5 {
+    height: 4rem;
+    width: 30rem;
+    background-color: transparent;
+    // transform: translate(0%, 50%);
+    backface-visibility: hidden;
+
+    padding: 1em 2em;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    letter-spacing: 5px;
+    color: $color-logo-dark;
+    transition: all 1000ms;
+    font-size: $medium-font-size;
+    // position: relative;
+    overflow: hidden;
+    outline: 2px solid $color-primary;
+
+    &:hover {
+      backface-visibility: hidden;
+      color: #ffffff;
+      outline: 2px solid $color-logo-light;
+    }
+
+    &::before {
+      backface-visibility: hidden;
+      content: "";
+      position: absolute;
+      left: -50px;
+      top: 0;
+      width: 0;
+      height: 100%;
+      background: linear-gradient(45deg, $color-logo-dark, $color-logo-light);
+      transform: skewX(45deg);
+      z-index: -1;
+      transition: width 1000ms;
+    }
+
+    &:hover::before {
+      width: 250%;
+    }
+  }
+  &__hide {
+    padding: 0.7em 0em;
+    background-color: transparent;
+    transform: translate(0%, 50%);
+    height: 2rem;
+    width: 7.8rem;
+    background-color: transparent;
+    backface-visibility: hidden;
+    border-radius: 0%;
+    margin-bottom: 1rem;
+
+    border: none;
+    letter-spacing: 0px;
+    color: $color-secondary-dark;
+    transition: all 1000ms;
+    font-size: $small-font-size;
+    position: relative;
+    overflow: hidden;
+    outline: 2px solid $color-primary;
+
+    &:hover {
+      backface-visibility: hidden;
+      color: $color-primary;
+      outline: 2px solid $color-secondary-light;
+    }
+
+    &::before {
+      backface-visibility: hidden;
+      content: "";
+      position: absolute;
+      left: -50px;
+      top: 0;
+      width: 0;
+      height: 100%;
+      background: linear-gradient(
+        45deg,
+        $color-secondary-light,
+        $color-secondary-dark
+      );
+      transform: skewX(45deg);
+      z-index: -1;
+      transition: width 1000ms;
+    }
+
+    &:hover::before {
+      width: 250%;
+    }
+  }
+
+  &__plus {
+    // box-sizing: border-box;
+    border-radius: 5px;
+    // border: 2px solid #111119;
+    border: 2px solid $color-primary;
+    height: 4.6rem;
+    width: 4.6rem;
+    font-size: 3.5rem;
+    font-weight: bold;
+    background: #333;
+    // background: #111119;
+    // background: white;
+    color: #e1ae01;
+    // color: $color-primary;
+    // text-align: center;
+  }
+
+  &__delete {
+    border-radius: 5px;
+    border: 2px solid $color-primary;
+    height: 4.6rem;
+    width: 4.6rem;
+    font-size: 3rem;
+    font-weight: bold;
+    background: #333;
+    color: #e1ae01;
+  }
+
+  &__delete--small {
+    border-radius: 5px;
+    border: 2px solid $color-primary;
+    height: 2.6rem;
+    width: 2.6rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    background: #333;
+    color: #e1ae01;
+  }
+}

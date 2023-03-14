@@ -1,0 +1,168 @@
+.formPage {
+  @include flex-around;
+  padding: 10rem;
+  width: 80%;
+  // height: 60rem;
+  height: 70vh;
+  border: 3px solid $color-titles;
+  position: relative;
+  margin: 1% 18rem 19% 18rem;
+  background-color: #b4b4b4;
+  background-position: right;
+
+  @include respond(tab-land) {
+    height: 78vh;
+    width: 90%;
+    margin: 10% 5% 10% 5%;
+  }
+
+  @include respond(tab-port) {
+    height: 75vh;
+    width: 90%;
+    margin: 10% 5% 10% 5%;
+  }
+
+  @include respond(phone) {
+    width: 95%;
+    height: 75vh;
+    margin: 10% 2.5% 10% 2.5%;
+    z-index: 4;
+    padding-left: 10%;
+  }
+}
+
+.form {
+  @include flex-around;
+  height: 100%;
+  width: 70%;
+  justify-items: center;
+  position: absolute;
+  left: 0%;
+  background-color: white;
+  clip-path: polygon(68% 100%, 100% 0%, -0.04% 0%, 0% 100%);
+
+  // border: 3px solid rgb(89, 0, 255);
+  @include respond(tab-land) {
+    width: 73%;
+    flex-wrap: wrap;
+    clip-path: polygon(75.87% 100%, 100% 0%, -0.04% 0%, 0% 100%);
+  }
+  @include respond(tab-port) {
+    flex-wrap: wrap;
+    width: 78%;
+    clip-path: polygon(75.87% 100.3%, 100% 0%, -0.04% 0%, 0% 100%);
+  }
+  @include respond(phone) {
+    width: 100%;
+    height: 100%;
+    background-color: none;
+    clip-path: polygon(100% 100.3%, 100% 0%, 0% 0%, 0% 100%);
+  }
+
+  &__popup {
+    height: 4rem;
+    border: 1px solid #ff0000;
+    color: #ff0000;
+    background-color: #ffe1e1;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 0.5rem;
+    padding: 1rem 0;
+    margin: 0.5rem;
+    h2 {
+      text-align: center;
+      align-self: center;
+    }
+  }
+
+  &__reserv {
+    width: 90%;
+  }
+
+  a:visited,
+  a {
+    text-decoration: none;
+    color: blue;
+  }
+}
+
+#titleForm {
+  height: 5rem;
+}
+
+.warning {
+  color: red;
+}
+
+.colorL {
+  padding: auto;
+  font-size: $huge-font-size;
+  margin-bottom: 0.5em;
+  font-weight: 600;
+  color: $color-titles;
+
+  @include respond(phone) {
+    font-size: $large-font-size;
+  }
+  // background-image: radial-gradient(
+  //   circle at 100% 0%,
+  //   #fff499 0,
+  //   #f0d473 25%,
+  //   #d4ab42 50%,
+  //   #b88304 75%,
+  //   #a56400 100%
+  // );
+  // color: transparent;
+  // background-clip: text;
+  // -webkit-background-clip: text;
+
+  &__version2 {
+    font-size: 3rem;
+    color: $color-titles;
+    // background-image: radial-gradient(
+    //   circle at 100% 0%,
+    //   #fff499 0,
+    //   #f0d473 25%,
+    //   #d4ab42 50%,
+    //   #b88304 75%,
+    //   #a56400 100%
+    // );
+    // color: transparent;
+    // background-clip: text;
+  }
+}
+
+.masterCont {
+  display: flex;
+  flex-direction: row;
+}
+
+.divConteiner {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  width: 50%;
+  // border: 2px solid #a5001b;
+
+  &__2 {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    width: 50%;
+  }
+}
+
+.containerFormRe {
+  display: flex;
+  flex-direction: column;
+  // border: 2px solid #a56400;
+}
+
+.contentConfirm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.formLogin{
+  width: 50%;
+}

@@ -1,0 +1,17 @@
+.colorL {
+  padding: auto;
+  font-size: 8rem;
+  margin-bottom: 0.5em;
+  font-weight: 600;
+  background-image: radial-gradient(
+    circle at 100% 0%,
+    #fff499 0,
+    #f0d473 25%,
+    #d4ab42 50%,
+    #b88304 75%,
+    #a56400 100%
+  );
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}

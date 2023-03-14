@@ -1,0 +1,60 @@
+.politics {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  .title {
+    font-size: 4rem;
+    padding-left: 2.8%;
+  }
+  &-hide {
+    display: none;
+    font-size: 1.4rem;
+  }
+}
+
+.politics-description {
+  padding: 1.5rem;
+  gap: 1.8rem;
+
+  div {
+    width: 100%;
+    font-size: 1.4rem;
+    h4 {
+      font-size: 2rem;
+      line-height: 2.5rem;
+      margin: 0.5rem 0;
+    }
+    li {
+      margin-left: 1rem;
+    }
+    ul {
+      margin-left: 1rem;
+      margin-bottom: 1rem;
+    }
+    .columns {
+      font-size: 1.4rem;
+      line-height: 2rem;
+      margin-bottom: 4rem;
+
+      -moz-column-count: 3;
+      -moz-column-gap: 4rem;
+      -moz-column-rule: 1px solid $color-secondary-light;
+
+      column-count: 3; //It creates two columns in this case or the number of columns we specified
+      column-gap: 4rem;
+      column-rule: 1px solid $color-secondary-light; // This is a line in the middle of the two columns
+
+      -moz-hyphens: auto; // For Mozilla
+      -ms-hyphens: auto; // For Microsoft
+      -webkit-hyphens: auto; // Basically Chrome and Safari
+      hyphens: auto;
+
+      p {
+        margin-bottom: 1rem;
+      }
+      @include respond(phone) {
+        column-count: 2;
+        -moz-column-count: 2;
+      }
+    }
+  }
+}

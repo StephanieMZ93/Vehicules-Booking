@@ -1,0 +1,57 @@
+.inputForm {
+  height: 3.2rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  background-color: #05060f0a;
+  border-radius: 0.5rem;
+  padding: 0 1rem;
+  border: 2px solid transparent;
+  font-size: 1rem;
+  transition: border-color 0.3s cubic-bezier(0.25, 0.01, 0.25, 1) 0s,
+    color 0.3s cubic-bezier(0.25, 0.01, 0.25, 1) 0s,
+    background 0.2s cubic-bezier(0.25, 0.01, 0.25, 1) 0s;
+
+  @include respond(tab-land) {
+    font-size: 1.6rem;
+    height: 5.2rem;
+
+  }
+  @include respond(tab-port) {
+    height: 4.2rem;
+    width: 30rem;
+  }
+  @include respond(phone) {
+    height: 3.2rem;
+    width: 30rem;
+  }
+}
+
+.labelForm {
+  display: block;
+  // padding: .7rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.09rem;
+  font-weight: bold;
+  color: #05060f99;
+  transition: color 0.3s cubic-bezier(0.25, 0.01, 0.25, 1) 0s;
+  @include respond(tab-land) {
+    font-size: 1.6rem;
+  }
+}
+
+.inputForm:hover,
+.inputForm:focus,
+.input1:hover .inputForm {
+  outline: none;
+  border-color: #05060f;
+}
+
+.input1:hover .labelForm,
+.inputForm:focus {
+  color: #05060fc2;
+}
+
+.inputLogin{
+  width: 100%;
+}

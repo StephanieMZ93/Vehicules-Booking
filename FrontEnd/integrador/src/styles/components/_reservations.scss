@@ -1,0 +1,101 @@
+.reserve {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  width: 100vw;
+  grid-area: calendario;
+
+  .calendar-mobile {
+    display: none;
+  }
+
+  @include respond(phone) {
+    .calendar {
+      display: none;
+    }
+
+    .calendar-mobile {
+      display: block;
+      .calendar-form {
+        margin: auto;
+      }
+    }
+  }
+
+  @include respond(tab-port) {
+    display: block;
+  }
+  .calendar {
+    width: 55%;
+    // border: 1px solid greenyellow;
+    margin: auto;
+    box-shadow: 4px 4px rgba(10, 10, 10, 0.527);
+    .calendar-form {
+      // border: 1px solid blue;
+      width: 100%;
+      background-color: white;
+    }
+  }
+  .buttonReserve {
+    // border: 1px solid yellow;
+    margin: auto;
+    text-align: center;
+    font-size: 2rem;
+    button {
+      margin: 1rem 0px;
+      width: 50%;
+      height: 5rem;
+      border-radius: 1rem;
+      cursor: pointer;
+      &:hover {
+        background-image: radial-gradient(
+          circle at 100% 0%,
+          #fbe689 0,
+          #eacb69 25%,
+          #d4ab42 50%,
+          #be8c17 75%,
+          #ad7100 100%
+        );
+        box-shadow: 0 0 20px #8f8135;
+        transition: all 1s;
+      }
+    }
+
+    @include respond(tab-port) {
+      margin: 2rem auto;
+      display: block;
+      width: 50%;
+      align-self: center;
+      p {
+        margin: auto;
+      }
+      button {
+        width: 45%;
+        height: 4rem;
+        margin: 1rem auto;
+      }
+    }
+
+    @include respond(phone) {
+      display: block;
+      button {
+        margin: 1rem auto;
+      }
+    }
+  }
+}
+
+.react-calendar__tile--active {
+  background-color: #eacb69 !important;
+}
+
+.booking {
+  h4 {
+    font-size: $large-font-size;
+    margin-left: 4rem;
+
+    @include respond(tab-port) {
+      text-align: center;
+    }
+  }
+}

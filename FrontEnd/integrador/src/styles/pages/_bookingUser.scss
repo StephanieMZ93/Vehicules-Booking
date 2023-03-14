@@ -1,0 +1,30 @@
+.booking-user {
+    text-align: center;
+    font-size: 3.5rem;
+    position: relative;
+    bottom: 3.5rem;
+}
+
+.cardBookings {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 30rem),8fr));
+    gap: 1.7rem;
+    margin: 0 1rem;
+}
+
+.not-booking {
+    width: 100%;
+    div {
+        width: 80%;
+        margin: 1rem auto;
+        text-align: center;
+        font-size: 3vw;
+        // height: 10vw;
+        align-items: center;
+        img  {
+            width: 20rem;
+            height: 20rem;
+            margin-left: 1rem;
+        }
+    }
+}

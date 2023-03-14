@@ -1,0 +1,226 @@
+// .categories {
+//   &-section {
+//     width: 100vw;
+//     padding: 2rem;
+//     background: linear-gradient(to bottom, $color-primary, #ffffff);
+
+//     h2 {
+//       font-size: $large-font-size;
+//     }
+//   }
+
+//   &-container {
+//     display: grid;
+//     gap: 1.5rem;
+//     grid-auto-flow: dense;
+//     // grid-auto-rows: 45rem;
+//     grid-auto-rows: 35rem;
+//     grid-template-columns: repeat(auto-fit, minmax(min(100%, 25rem), 2fr));
+//   }
+// }
+
+// .category {
+//   // border: 1px solid #f3f1ed;
+//   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+//   border-radius: 10px;
+//   background-image: radial-gradient(#f3f1ed, $color-secondary-dark);
+//   padding: 0 2.5rem;
+
+//   &:link,
+//   &:visited {
+//     color: $color-primary;
+//     text-decoration: none;
+//   }
+
+//   &__img {
+//     background-repeat: no-repeat;
+//     border-radius: 0.5rem;
+//     overflow: hidden;
+//     height: 80%;
+//     background-position: center;
+//     background-size: contain;
+//     // border: 1px solid white;
+//   }
+
+//   h2 {
+//     margin: 0.5rem;
+//     font-size: $large-font-size;
+//   }
+
+//   p {
+//     margin: 0.5rem;
+//     font-size: $default-font-size;
+//   }
+
+//   &:hover {
+//     transform: scale(1.02);
+//   }
+// }
+
+///////////////////////////////////////////
+.categories {
+  &-section {
+    width: 100vw;
+    padding: 2rem;
+    // h2 {
+    //   font-size: $large-font-size;
+    // }
+  }
+
+  &__title {
+    text-align: center;
+    // border: 1px red solid;
+    text-align: left;
+    font-size: 6rem;
+    line-height: 6.9rem;
+
+    @include respond(tab-port) {
+      font-size: 6rem;
+      line-height: 6.9rem;
+    }
+
+    @include respond(phone) {
+      font-size: 3.5rem;
+      line-height: 4.4rem;
+    }
+  }
+
+  &-container {
+    // min-height: 39vh;
+    min-height: 60vh;
+    // border: 5px solid blue;
+    background-color: rgba(0, 0, 0, 0.25);
+    position: relavite;
+
+    @include respond(tab-land) {
+      // max-width: 100%;
+      width: 100%;
+    }
+
+    @include respond(phone) {
+      min-height: 15vh;
+    }
+    @include respond(big-desktop) {
+      max-width: 100%;
+    }
+
+    h3 {
+      // border: 1px blue solid;
+      text-align: left;
+      margin: 0;
+      font-size: 4rem;
+      line-height: 4.9rem;
+
+      @include respond(tab-port) {
+        font-size: 3rem;
+        line-height: 3.9rem;
+      }
+
+      @include respond(phone) {
+        font-size: 2rem;
+        line-height: 2.9rem;
+      }
+      b {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.category {
+  // border: 1px solid #f3f1ed;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  position: relative;
+
+  &__info {
+    position: absolute;
+    // border: 1px solid rgb(101, 30, 66);
+    height: 25%;
+    width: 30%;
+    left: 5rem;
+    bottom: 2.5rem;
+    z-index: 3;
+    text-align: left;
+    color: whitesmoke;
+    // color: black;
+    letter-spacing: 2.5px;
+    // background-color: rgba(245, 240, 240, 0.25);
+    cursor: pointer;
+    @include respond(tab-land) {
+      width: 45%;
+    }
+    cursor: pointer;
+    @include respond(tab-port) {
+      width: 40%;
+    }
+
+    @include respond(phone) {
+      height: 49%;
+      width: 51%;
+      top: 64%;
+      transform: scale(1);
+      margin-left: 10%;
+    }
+
+    &:hover {
+      // color: #ffe879;
+      color: #ffd300;
+      transform: scale(1.05);
+    }
+    b {
+      margin-left: 2rem;
+    }
+
+    @include respond(phone) {
+      left: 7rem;
+      bottom: 1.5rem;
+      height: 6.5rem;
+      font-size: $small-font-size;
+      transform: translate(-25%, -5%);
+    }
+  }
+
+  &:link,
+  &:visited {
+    color: $color-primary;
+    text-decoration: none;
+  }
+
+  &__slider {
+    min-height: 34vh;
+    @include respond(phone) {
+      min-height: 25vh;
+    }
+    @include respond(phone) {
+      // max-height: 45vh;
+      // min-height: 30vh;
+      // max-height: 10vh;
+    }
+  }
+
+  &__img {
+    overflow: hidden;
+    width: 100%;
+    // height: 39vh;
+    height: 60vh;
+
+    // border: 1px solid red;
+    background-repeat: no-repeat;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    background-position: center;
+    // background-size: contain;
+    background-size: cover;
+    cursor: pointer;
+    @include respond(phone) {
+      // min-height: 25vh;
+      height: 35vh;
+      background-size: contain;
+    }
+  }
+
+  &:hover {
+    transform: scale(1.02);
+  }
+}
