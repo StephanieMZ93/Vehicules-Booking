@@ -1,0 +1,838 @@
+{
+	"info": {
+		"_postman_id": "0947cd8a-554f-4ed8-9bc9-7760317cf15b",
+		"name": "Test P.Integrador LOCAL",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23311746"
+	},
+	"item": [
+		{
+			"name": "Category",
+			"item": [
+				{
+					"name": "To Register Category",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"Vans\",\r\n    \"description\":\"Actualizar\",\r\n    \"url\":\"poner url\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/category",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"category"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search Category",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/category",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"category"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search One Category",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/category/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"category",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Category",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":\"4\",\r\n    \"title\":\"Vans\",\r\n    \"description\":\"Vehicle built on the platform of a small car with a low body, sliding or hinged rear doors and 3 or 4 rows of seats that fit between 8 to 17 passengers in total. Completely redesigned interior with modern, ergonomic and resistant seats, perfect for transporting its occupants in total comfort.\",\r\n    \"url\":\"https://g2-images-destiautos.s3.us-east-2.amazonaws.com/ProductsImages/Category/VANS.png\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/category",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"category"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Category",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/category/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"category",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "City",
+			"item": [
+				{
+					"name": "To Register City",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nameCity\":\"Cartagena\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/city",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"city"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search City",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/city",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"city"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete City",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/city/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"city",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "To Register Product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productName\": \"Audi A5 Sportback\",\r\n    \"description\": \" Mild hybrid technology offers greater comfort while also reducing fuel consumption. In the updated Audi S5 Sportback (combined fuel consumption in l/100 km*: 6.2 – 6.1; combined CO2 emissions in g/km\",\r\n    \"brand\": \"Audi\",\r\n    \"model\": \"2020\",\r\n    \"availability\": \"low\",\r\n    \"priceDay\": 499.99,\r\n    \"reserved\": false,\r\n    \"featuresProducts\": [{\"id\":\"1\"}, {\"id\":\"5\"}, {\"id\":\"10\"}, {\"id\":\"11\"}, {\"id\":\"13\"}, {\"id\":\"18\"}, {\"id\":\"20\"}, {\"id\":\"24\"}, {\"id\":\"25\"}],\r\n    \"image\": [{\"id\":\"1\"}, {\"id\":\"2\"}, {\"id\":\"3\"}, {\"id\":\"4\"}, {\"id\":\"5\"}, {\"id\":\"6\"}, {\"id\":\"7\"}, {\"id\":\"8\"}, {\"id\":\"9\"}],\r\n    \"category_id\": 1,\r\n    \"city_id\": 4\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/product",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search Product Random",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/product/random",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"product",
+								"random"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search Product By City",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/product/city/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"product",
+								"city",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search Products",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/product",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search one Product",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/product/19",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"product",
+								"19"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search Product By Category",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/product/category/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"product",
+								"category",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search By Date",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/product/byDate?startDate=2023-02-23&endDate=2023-02-25",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"product",
+								"byDate"
+							],
+							"query": [
+								{
+									"key": "startDate",
+									"value": "2023-02-23"
+								},
+								{
+									"key": "endDate",
+									"value": "2023-02-25"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Product",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/product/18",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"product",
+								"18"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Product",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 19,\r\n    \"productName\": \"Honda Odyssey\",\r\n    \"description\": \"Comfortable and reliable vehicle ideal to share with family\",\r\n    \"brand\": \"Honda\",\r\n    \"model\": \"2023\",\r\n    \"availability\": \"medium\",\r\n    \"priceDay\": 169.99,\r\n    \"reserved\": false,\r\n    \"featuresProducts\":[{\"id\":\"3\"}, {\"id\":\"7\"}, {\"id\":\"10\"}, {\"id\":\"11\"}, {\"id\":\"15\"}, {\"id\":\"17\"}, {\"id\":\"22\"}, {\"id\":\"24\"}, {\"id\":\"25\"}],\r\n    \"image\": [{\"id\":\"75\"}, {\"id\":\"76\"}, {\"id\":\"77\"}, {\"id\":\"78\"}, {\"id\":\"79\"}, {\"id\":\"80\"}, {\"id\":\"81\"}, {\"id\":\"82\"}, {\"id\":\"83\"}],\r\n    \"category_id\": 4,\r\n    \"city_id\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/product",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"product"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Feature",
+			"item": [
+				{
+					"name": "To Register Feature",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nameFeature\":\"2 Doors\",\r\n    \"description\":\"\",\r\n    \"present\":\"true\",\r\n    \"url\":\"hola\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/feature",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"feature"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search Features",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/feature",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"feature"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Feature",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":\"1\",\r\n    \"nameFeature\":\"2 Doors\",\r\n    \"description\":\"\",\r\n    \"present\":\"true\",\r\n    \"url\":\"Se le pone la url\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/feature",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"feature"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Image",
+			"item": [
+				{
+					"name": "To Register Image",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "administrador",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "franksurenuga@gmail.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"Soy una imagen\",\r\n    \"url\":\"soy la url\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/image",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"image"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search Image",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/image",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"image"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "ToLogin",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\":\"franksurenuga@gmail.com\",\r\n  \"password\":\"2373995f\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/user/login",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ToRegisterUser",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Guille\",\r\n    \"lastName\":\"Uribe\",\r\n    \"email\":\"guille03@gmail.com\",\r\n    \"password\":\"g1234567U\",\r\n    \"city\":\"Envigado\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/user/register",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmcmFua3N1cmVudWdhQGdtYWlsLmNvbSIsImlhdCI6MTY3NzM3MzI3MiwiZXhwIjoxNjc5OTY1MjcyfQ.dNCJayv2T14UIPIZU7kHsAHWkUuVEchrZ4_x8B5LU44",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/user/franksurenuga@gmail.com",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"franksurenuga@gmail.com"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Booking",
+			"item": [
+				{
+					"name": "To Register Booking",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmcmFua3N1cmVudWdhQGdtYWlsLmNvbSIsImlhdCI6MTY3NzUxMzEzNiwiZXhwIjoxNjgwMTA1MTM2fQ.mTPOtneJwrCRjbdl_3WpYtnOIbAoTJ_ND6bg89Ynfi4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"startHour\":\"10:00:00\",\r\n    \"startDate\":\"2023-03-02\",\r\n    \"endDate\":\"2023-03-03\",\r\n    \"products_id\": 1,\r\n    \"user_id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/booking",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"booking"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search Booking Copy",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmcmFua3N1cmVudWdhQGdtYWlsLmNvbSIsImlhdCI6MTY3NzUxMzEzNiwiZXhwIjoxNjgwMTA1MTM2fQ.mTPOtneJwrCRjbdl_3WpYtnOIbAoTJ_ND6bg89Ynfi4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/booking/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"booking",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search All Booking",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/booking",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"booking"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Booking Copy",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmcmFua3N1cmVudWdhQGdtYWlsLmNvbSIsImlhdCI6MTY3NzUxMzEzNiwiZXhwIjoxNjgwMTA1MTM2fQ.mTPOtneJwrCRjbdl_3WpYtnOIbAoTJ_ND6bg89Ynfi4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/booking/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"booking",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Raiting",
+			"item": [
+				{
+					"name": "To Register Raiting",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmcmFua3N1cmVudWdhQGdtYWlsLmNvbSIsImlhdCI6MTY3NzUxMzEzNiwiZXhwIjoxNjgwMTA1MTM2fQ.mTPOtneJwrCRjbdl_3WpYtnOIbAoTJ_ND6bg89Ynfi4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"products_id\":1,\r\n    \"users_id\":1,\r\n    \"rating\":5.0\r\n\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/rating",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rating"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Rating",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmcmFua3N1cmVudWdhQGdtYWlsLmNvbSIsImlhdCI6MTY3NzUxMzEzNiwiZXhwIjoxNjgwMTA1MTM2fQ.mTPOtneJwrCRjbdl_3WpYtnOIbAoTJ_ND6bg89Ynfi4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"products_id\":1,\r\n    \"users_id\":1,\r\n    \"rating\":4.0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/rating",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rating"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

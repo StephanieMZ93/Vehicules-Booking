@@ -1,0 +1,11 @@
+Al principio el enfoque que se le dio al testing del proyecto no contaba con un enfoque de metodología agiles, pues se emplearon técnicas de pruebas de caja negra (partición de equivalencia, tablas de decisión, transición de estados) que consisten en tomar como base de prueba los requerimientos de software, especificaciones y las historias de nuestro usuario. A la par se creo también un diagrama de flujo de transición de estados, que nos permitía tener una mejor idea de las funcionalidades que iba a tener nuestro aplicativo web y lo que se tendría que testear. Sin embargo, esta idea principal iba en contra a las metodologías agiles, por lo que hizo deprecar la idea.
+
+Tras un replanteamiento, la nueva estrategia que se empezó a desarrollar  fue el trabajar el testing a través de las épicas y las historias de usuario, con las cuales se empezaron a desarrollar por fracciones de tiempo los test exploratorios. Estos nos permitieron encontrar defectos en la aplicación web, y además, obtener casos de pruebas que se fueron documentando en un template con formato .xlsx, allí se desarrollaron las tablas de test Plan y de test Case.
+
+De igual manera, se utilizaron las epicas y las historias de administrador, para llevar a cabo el planteamiento del testing de la API, este se documento tambien en un template con formato .xlsx, el cual contiene la tabla de test Case.
+
+Para la parte de la automatización del testing, se empleo la aplicación de Postman, con el cual se crearon colecciones para probar todos los métodos de la API (Post, Get, Put, Delete), optimizando de esta manera los tiempos de ejecución de pruebas. También, se empleo el conjunto de utilidades de Selenium para llevar a cabo las pruebas funcionales de cada una de las historias de usuario y evaluar el correcto funcionamiento de la aplicación web.
+
+El objetivo de estas pruebas fue realizarlas paralelamente al desarrollo de la aplicación web, para así poder prevenir e incluso corregir posibles errores o defectos que no vayan acorde a las exigencias de nuestro usuario.
+
+Al realizar este planteamiento nos encontramos con un posible riesgo de generar pruebas redundantes y no lograr probar algunos casos de pruebas, pues este proceso requiere de un tiempo excesivo para ser probado.
